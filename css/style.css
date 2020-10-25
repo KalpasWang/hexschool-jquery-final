@@ -141,10 +141,28 @@ body {
 .wrap {
   max-width: 1000px;
   margin: auto;
+  position: relative;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+/* 回到頁首 */
+
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.scroll-top .fas {
+  color: #00cb9b;
+  background: #000;
+  border-radius: 50%;
+  font-size: 50px;
+  text-decoration: none;
 }
 
 /* 社群連結，選單 */

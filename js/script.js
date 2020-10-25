@@ -35,4 +35,27 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // lightbox 效果
+  lightbox.option({
+    'resizeDuration': 500,
+    'fadeDuration': 200,
+    'wrapAround': true,
+  });
+
+  // 滑動到頁首
+  $('.scroll-top a').click(function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 500);
+  });
+
+  // 滑動到聯絡區域
+  $('.scroll-contact a').click(function(event) {
+    event.preventDefault();
+    $('html,body').animate({
+      scrollTop: $('#contact').offset().top
+    }, 500);
+  });
 });
