@@ -3,7 +3,13 @@ $(document).ready(function() {
   $('.dropdown > a').click(function(event) {
     event.preventDefault();
     $('a .fas').toggleClass('active');
-    $('.dropdown-menu').toggle();
+
+    // 在最小的螢幕尺寸做滑動效果
+    if($(window).outerWidth() > 567) {
+      $('.dropdown-menu').toggle();
+    } else {
+      $('.dropdown-menu').slideToggle(300);
+    }
   });
 
   // 當按到非選單範圍的地方，將選單收合
