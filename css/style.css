@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
 
 /* RESET CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -123,7 +123,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -135,16 +135,17 @@ table {
 
 body {
   font-size: 16px;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .wrap {
   max-width: 1000px;
   margin: auto;
-  position: relative;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -165,6 +166,10 @@ body {
   text-decoration: none;
 }
 
+.scroll-top:hover .fas {
+  background: #cd3b72;
+}
+
 /* 社群連結，選單 */
 
 .social-link {
@@ -181,14 +186,14 @@ body {
 
 .social-link li + li {
   /* 在社群連結中加入分隔線 */
-  border-left: 1px solid #ccc; 
+  border-left: 1px solid #ccc;
 }
 
 .social-link a {
   text-decoration: none;
 }
 
-.social-link a:hover{
+.social-link a:hover {
   color: #00cb9b;
 }
 
@@ -240,7 +245,7 @@ body {
 }
 
 .menu .menu-item > a:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 5px;
   width: 100%;
@@ -261,7 +266,7 @@ body {
 }
 
 .clearfix:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -276,7 +281,7 @@ body {
   z-index: 10;
   width: 100%;
   background: #fff;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 .dropdown-item {
@@ -296,7 +301,7 @@ body {
 
 /* 廣告橫幅 */
 
-#banner {
+.banner {
   margin-bottom: 50px;
   max-width: 100%;
   height: 346px;
@@ -305,7 +310,6 @@ body {
 .swiper-container {
   height: 100%;
 }
-
 
 .slide1 {
   background: url(../images/banner1.png) right center;
@@ -328,7 +332,7 @@ body {
   width: 100%;
   transform: translateY(-50%);
   padding: 25px;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   font-size: 35px;
   color: #fff;
@@ -355,14 +359,15 @@ body {
 
 /* 卡片內容 */
 
-#content {
+.course-list {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  list-style: none;
   margin-bottom: 50px;
 }
 
-#content .item {
+.course-list .item {
   width: 30%;
   min-height: 320px;
   box-shadow: 0 1px 2px #aaa;
@@ -370,14 +375,14 @@ body {
   transform: scale(1) translateY(0);
 }
 
-#content .item img {
+.course-list .item img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: auto;
 }
 
-#content .item .text {
+.course-list .item .text {
   margin: 0 15px;
   text-align: justify;
   font-size: 15px;
@@ -386,32 +391,32 @@ body {
   padding-bottom: 15px;
 }
 
-#content .item .text h3 {
+.course-list .item .text h3 {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
 
-#content .item .text ul {
+.course-list .item .text ul {
   list-style: inside;
 }
 
 /* 比較表 */
 
-#comparison h2 {
+.comparison h2 {
   font-size: 24px;
   margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
 }
 
-#comparison table {
+.comparison table {
   width: 85%;
   margin: 0 auto 60px;
 }
 
-#comparison td,
-#comparison th {
+.comparison td,
+.comparison th {
   width: 25%;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -419,33 +424,33 @@ body {
   text-align: left;
 }
 
-#comparison th {
+.comparison th {
   background: #eee;
   font-weight: 500;
 }
 
-#comparison td {
+.comparison td {
   font-weight: 400;
 }
 
-#comparison .better {
+.comparison .better {
   color: #00cb9b;
 }
 
-#comparison tr:hover {
+.comparison tr:hover {
   background: #eee;
 }
 
 /* 聯絡我們 */
 
-#contact {
+.contact {
   padding: 40px 30px 20px;
   background: linear-gradient(180deg, #00654a, #009972);
   color: #fff;
   margin-bottom: 27px;
 }
 
-#contact h2 {
+.contact h2 {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.6;
@@ -453,45 +458,47 @@ body {
   margin-bottom: 30px;
 }
 
-#contact form {
+.contact form {
   display: flex;
   justify-content: stretch;
   align-items: center;
 }
 
-#contact form textarea {
+.contact form textarea {
   margin-right: 20px;
   width: 50%;
   outline: none;
   border-radius: 5px;
   resize: none;
   line-height: 1.2;
+  padding: 7px 5px;
 }
 
-#contact form .user-info {
+.contact form .user-info {
   margin-left: 20px;
   width: 50%;
 }
 
-#contact .user-info .input-group {
+.contact .user-info .input-group {
   margin-bottom: 16px;
 }
 
-#contact .input-group label {
+.contact .input-group label {
   display: block;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-#contact .input-group input {
+.contact .input-group input {
   width: 100%;
-  height: 32px;
+  padding: 7px 5px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   outline: none;
 }
 
-#contact input[type="submit"] {
+.contact input[type='submit'] {
   background: #00cc98;
   padding: 10px 20px;
   border: none;
@@ -502,16 +509,19 @@ body {
   cursor: pointer;
 }
 
-#contact input[type="submit"]:hover {
+.contact input[type='submit']:hover {
   background: #74ffdf;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  box-sizing: border-box;
+  align-items: flex-start;
   padding: 0 22px 50px;
+}
+
+footer > a {
+  text-decoration: none;
 }
 
 footer .contact-us li {
@@ -520,12 +530,18 @@ footer .contact-us li {
 
 footer .contact-us .highlight {
   color: #cd3b72;
+  text-decoration: none;
+}
+
+footer .contact-us .highlight:hover {
+  text-decoration: underline;
 }
 
 /* 響應式 */
 
 @media (max-width: 767px) {
-  .menu h1, .menu ul {
+  .menu h1,
+  .menu ul {
     float: none;
   }
 
@@ -542,29 +558,19 @@ footer .contact-us .highlight {
     margin: 0 4.666%;
   }
 
-  #content {
+  .course-list {
     flex-direction: column;
     align-items: center;
   }
 
-  #content .item {
+  .course-list .item {
     width: 80%;
     margin-bottom: 30px;
     min-height: 300px;
   }
-
-  footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer img {
-    margin-bottom: 20px;
-  }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 567px) {
   .menu .menu-item {
     float: none;
     width: 100%;
@@ -590,10 +596,21 @@ footer .contact-us .highlight {
     flex-direction: column;
   }
 
-  #contact form textarea, #contact form .user-info {
+  #contact form textarea,
+  #contact form .user-info {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer img {
     margin-bottom: 20px;
   }
 }

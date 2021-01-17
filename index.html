@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery 最終作業（下拉式選單、輪撥、燈箱、滑動到頁首等效果）</title>
-    <link rel="icon" href="https://www.hexschool.com/favicon.ico">
-    <meta name="description" content="jQuery 最終作業（下拉式選單、輪撥、燈箱、滑動到頁首等效果）">
-    <meta name="keywords" content="Kalpas Wang, HexSchool, jquery, 最終作業, lightbox, carousel, dropdown, scroll to top">
+    <link rel="icon" href="https://www.hexschool.com/favicon.ico" />
+    <meta
+      name="description"
+      content="jQuery 最終作業（下拉式選單、輪撥、燈箱、滑動到頁首等效果）"
+    />
+    <meta
+      name="keywords"
+      content="Kalpas Wang, HexSchool, jquery, 最終作業, lightbox, carousel, dropdown, scroll to top"
+    />
 
-    <meta property="og:title" content="jQuery 最終作業（下拉式選單、輪撥、燈箱、滑動到頁首等效果）">
-    <meta property="og:description" content="由 Kalpas Wang 所練習的 jQuery 最終作業">
-    <meta property="og:url" content="https://kalpaswang.github.io/hexschool-jquery-final/">
+    <meta
+      property="og:title"
+      content="jQuery 最終作業（下拉式選單、輪撥、燈箱、滑動到頁首等效果）"
+    />
+    <meta
+      property="og:description"
+      content="由 Kalpas Wang 所練習的 jQuery 最終作業"
+    />
+    <meta
+      property="og:url"
+      content="https://kalpaswang.github.io/hexschool-jquery-final/"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/logo.png" />
     <meta property="og:image:type" content="png" />
@@ -18,9 +33,18 @@
     <meta property="og:image:height" content="50" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -76,7 +100,7 @@
         </div>
       </header>
 
-      <section id="banner">
+      <section class="banner">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
@@ -89,131 +113,142 @@
               <h2>不論身在何處<br />在線上帶你就業</h2>
             </div>
           </div>
-          <div class="swiper-pagination"></div>    
+          <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </section>
 
       <section id="content">
-        <div class="item">
-          <a
-            class="lightbox-img-link"
-            href="images/html5-lg.jpg"
-            data-lightbox="myset"
-            data-title="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。"
-          >
-            <img class="lightbox-images" src="images/html.png" alt="HTML5" />
-          </a>
-          <div class="text">
-            <h3>HTML5 基礎教學</h3>
-            <p>
-              主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <a
-            class="lightbox-img-link"
-            href="images/rwd-lg.jpg"
-            data-lightbox="myset"
-            data-title="響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的，六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。"
-          >
-            <img class="lightbox-images" src="images/rwd.png" alt="RWD" />
-          </a>
-          <div class="text">
-            <h3>響應式網站設計</h3>
-            <p>
-              響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的，六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <a
-            class="lightbox-img-link"
-            href="images/jquery-logo-lg.png"
-            data-lightbox="myset"
-            data-title="jQuery 實戰教學，本課程有以下特色：1. 了解變數的使用方法 2. 學習並操作DOM 3. 學習基本數學運算方法 4. 套件的操作及運用"
-          >
-            <img class="lightbox-images" src="images/jQuery.png" alt="jQuery" />
-          </a>
-          <div class="text">
-            <h3>jQuery 實戰教學</h3>
-            <p>本課程有以下特色</p>
-            <ul>
-              <li>了解變數的使用方法</li>
-              <li>學習並操作 DOM</li>
-              <li>學習基本數學運算方法</li>
-              <li>套件的操作及運用</li>
-            </ul>
-          </div>
-        </div>
+        <ul class="course-list">
+          <li class="item">
+            <a
+              class="lightbox-img-link"
+              href="images/html5-lg.jpg"
+              data-lightbox="myset"
+              data-title="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。"
+            >
+              <img class="lightbox-images" src="images/html.png" alt="HTML5" />
+            </a>
+            <div class="text">
+              <h3>HTML5 基礎教學</h3>
+              <p>
+                主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <a
+              class="lightbox-img-link"
+              href="images/rwd-lg.jpg"
+              data-lightbox="myset"
+              data-title="響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的，六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。"
+            >
+              <img class="lightbox-images" src="images/rwd.png" alt="RWD" />
+            </a>
+            <div class="text">
+              <h3>響應式網站設計</h3>
+              <p>
+                響應式網站設計(Responsive web
+                design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的，六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <a
+              class="lightbox-img-link"
+              href="images/jquery-logo-lg.png"
+              data-lightbox="myset"
+              data-title="jQuery 實戰教學，本課程有以下特色：1. 了解變數的使用方法 2. 學習並操作DOM 3. 學習基本數學運算方法 4. 套件的操作及運用"
+            >
+              <img
+                class="lightbox-images"
+                src="images/jQuery.png"
+                alt="jQuery"
+              />
+            </a>
+            <div class="text">
+              <h3>jQuery 實戰教學</h3>
+              <p>本課程有以下特色</p>
+              <ul>
+                <li>了解變數的使用方法</li>
+                <li>學習並操作 DOM</li>
+                <li>學習基本數學運算方法</li>
+                <li>套件的操作及運用</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <section id="comparison">
+      <section id="comparison" class="comparison">
         <h2>線上及實體課程的差異</h2>
         <table rules="row">
-          <tr>
-            <th>項目</th>
-            <th>Hex School 線上課程</th>
-            <th>一般線上課程</th>
-            <th>實體課程</th>
-          </tr>
-          <tr>
-            <td>費用</td>
-            <td class="better">較低</td>
-            <td class="better">較低</td>
-            <td>較高</td>
-          </tr>
-          <tr>
-            <td>學習效果</td>
-            <td>一般</td>
-            <td>較低</td>
-            <td class="better">很好</td>
-          </tr>
-          <tr>
-            <td>Code review</td>
-            <td class="better">有</td>
-            <td>無</td>
-            <td>不一定</td>
-          </tr>
-          <tr>
-            <td>課程更新速度</td>
-            <td class="better">普通</td>
-            <td class="better">普通</td>
-            <td>較慢</td>
-          </tr>
-          <tr>
-            <td>多次複習</td>
-            <td class="better">可</td>
-            <td class="better">可</td>
-            <td>不可</td>
-          </tr>
-          <tr>
-            <td>字幕</td>
-            <td class="better">有</td>
-            <td>不一定</td>
-            <td>板書</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>六角學院線上課程</th>
+              <th>一般線上課程</th>
+              <th>實體課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>費用</td>
+              <td class="better">較低</td>
+              <td class="better">較低</td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <td>學習效果</td>
+              <td>一般</td>
+              <td>較低</td>
+              <td class="better">很好</td>
+            </tr>
+            <tr>
+              <td>Code review</td>
+              <td class="better">有</td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <td>課程更新速度</td>
+              <td class="better">普通</td>
+              <td class="better">普通</td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <td>多次複習</td>
+              <td class="better">可</td>
+              <td class="better">可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <td>字幕</td>
+              <td class="better">有</td>
+              <td>不一定</td>
+              <td>板書</td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact">
         <h2>對我們課程有興趣嗎？<br />歡迎留下你的資料</h2>
         <form>
-          <textarea cols="30" rows="15"></textarea>
+          <textarea cols="30" rows="15" placeholder="我想說..."></textarea>
           <div class="user-info">
             <div class="input-group">
               <label for="name">姓名</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" placeholder="姓名" />
             </div>
             <div class="input-group">
               <label for="phone">電話</label>
-              <input type="tel" id="phone" />
+              <input type="tel" id="phone" placeholder="電話" />
             </div>
             <div class="input-group">
               <label for="email">信箱</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" placeholder="Email" />
             </div>
             <input type="submit" value="送出" />
           </div>
@@ -221,14 +256,27 @@
       </section>
 
       <footer>
-        <img src="images/footerLogo.png" alt="footer Logo" />
+        <a href="#">
+          <img src="images/footerLogo.png" alt="footer Logo" />
+        </a>
         <ul class="contact-us">
-          <li>聯絡我們：<span class="highlight">hexschool@gmail.com</span></li>
-          <li>電話：<span class="highlight">0999-123456</span></li>
+          <li>
+            聯絡我們：
+            <a href="mailto:hexschool@gmail.com" class="highlight">
+              hexschool@gmail.com
+            </a>
+          </li>
+          <li>
+            電話：<a href="tel:+0999-123456" class="highlight">0999-123456</a>
+          </li>
         </ul>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
